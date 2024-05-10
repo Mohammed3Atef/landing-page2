@@ -220,7 +220,8 @@ body {
 @media (max-width: 785px) {
   .landing .container {
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
+    justify-content: flex-start;
   }
 }
 .landing .container .text {
@@ -230,6 +231,7 @@ body {
   .landing .container .text {
     text-align: center;
     padding-top: 50px;
+    flex: 0;
   }
 }
 .landing .container .text h2 {
@@ -264,11 +266,7 @@ body {
     width: 300px;
   }
 }
-@media (max-width: 424px) {
-  .landing .container img {
-    width: 200px;
-  }
-}
+
 .landing .go-down {
   position: absolute;
   bottom: 30px;
@@ -283,6 +281,11 @@ body {
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
+}
+@media (max-width: 785px) {
+  .landing .go-down {
+    bottom: 150px;
+  }
 }
 .landing .go-down i {
   animation: bouncing 0.5s linear infinite;
