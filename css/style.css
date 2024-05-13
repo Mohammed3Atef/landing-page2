@@ -1061,7 +1061,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 20%;
+  flex-basis: 5%;
   padding-bottom: 50px;
   padding-top: 50px;
 }
